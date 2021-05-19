@@ -11,6 +11,10 @@ const routes: Routes = [
     component:HomeComponent
   },
   {
+    path:'posts',
+    loadChildren: () => import('./pages/posts/posts.module').then( p => p.PostsModule)
+  },
+  {
     path:'about',
     component:AboutComponent
   },

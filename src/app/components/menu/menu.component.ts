@@ -13,6 +13,10 @@ export class MenuComponent implements OnInit {
       name:'Home'
     },
     {
+      path:'posts',
+      name:'Posts'
+    },
+    {
       path:'about',
       name:'About'
     },
