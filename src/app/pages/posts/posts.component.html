@@ -2,4 +2,15 @@
     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
         <h1 class="fs-4 fw-light text-start text-dark">Page \ <span class="text-info fw-bolder">Posts</span></h1>
     </div>
+    <div class="row mt-3">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-xxl-3 mb-3" *ngFor="let post of posts | async">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title">{{ post.title }}</h5>
+                    <p class="card-text mb-5">{{ post.body }}</p>
+                    <a href="" class="position-absolute bottom-0 end-0 mb-2 me-2 badge rounded-pill bg-info text-light text-decoration-none">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
