@@ -15,4 +15,7 @@ export class PostsComponent implements OnInit {
     this.posts = this.postsService.getPosts();
   }
 
+  escucharEvento( id ){
+    console.log('Click me : ' , id);
+  }
 }
